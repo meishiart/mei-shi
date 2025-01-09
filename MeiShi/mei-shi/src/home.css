@@ -1,0 +1,208 @@
+.branddesign {
+    width: 100vw;
+    padding: 4rem 0;
+    /* padding-bottom: 4rem 0; */
+    background: #1a1a1a;
+    position: relative;
+    /* left: 50%;
+    right: 50%; */
+    /* margin-left: -50vw;
+    margin-right: -50vw; */
+}
+
+.no-background {
+    width: 100vw;
+    padding: 4rem 0;
+    /* padding-bottom: 4rem 0; */
+    background: #1a1a1a;
+    position: relative;
+}
+.branddesign-container {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+
+.design-flex {
+    display: flex;
+    gap: 2rem;
+    /* border: 5px solid red; */
+}
+
+.design-card, .paintings-card {
+    flex: 0 1 300px;
+    transition: all 0.3s ease;
+}
+
+.design-card:hover, .paintings-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.design-squares {
+    min-width: 150px;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paintings-squares {
+    /* width: 100%; */
+    height: 250px;
+    width: calc(27.4vw);
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .design-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .design-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .paintings-squares {
+        width: 100%;
+        height: 250px;
+        width: 100%;
+    }
+}
+
+.link-block {
+    margin-top: 2%;
+}
+
+.branddesign-title {
+    line-height: 1;
+    color: #FFE89C;
+}
+.branddesign-title.long {
+    line-height: 1.5;
+}
+.branddesign p {
+    font-size: 1.1rem;
+}
+
+.branddesign button {
+    opacity: .9;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #D4AF37, #FFE89C);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    color: #000;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateZ(0);
+    &:hover {
+        opacity: 1;
+        transform: translateY(-3px) translateZ(10px) rotateX(2deg);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    &:active {
+        transform: translateY(1px) translateZ(0);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+}
+
+.designlink {
+    color: #FFE89C;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+    /* text-decoration: none; */
+}
+
+.paintings {
+    width: 100vw;
+    position: relative;
+    /* left: 50%; */
+    /* right: 50%; */
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.paintings h2 {
+    /* text-align: center; */
+    margin: 5%;
+}
+
+.slideshow-container {
+    /* ... existing styles ... */
+    max-width: min(800px, 90vw);  /* Use the smaller of 800px or 90% of viewport width */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide-image {
+    width: min(500px, 80vw);  /* Make image responsive */
+    height: auto;
+    object-fit: cover;
+}
+
+.paintings-card {
+    width: 500px;
+}
+
+.textbox {
+    max-width: 650px;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+
+

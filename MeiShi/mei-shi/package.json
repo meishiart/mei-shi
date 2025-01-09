@@ -1,16 +1,25 @@
 {
   "name": "mei-shi",
+  "homepage": "https://meishiart.github.io/mei-shi/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "gh-pages": "^6.3.0",
+    "p5": "^1.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-p5": "^1.4.1",
+    "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
+    "scroll-carousel": "^1.2.7",
+    "scroll-carousel-react": "^1.0.0",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
