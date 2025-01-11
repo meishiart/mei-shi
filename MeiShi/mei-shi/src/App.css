@@ -217,6 +217,10 @@ html {
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+
+    .hero-title {
+      font-size: 4rem;
+    }
   }
   
   .footer-section {

@@ -29,7 +29,7 @@ const Paintings = () => {
 
 
 
-            <div className="branddesign-container">
+            <div>
 
                 {/* Desktop Carousel */}
                 <div className="carousel-view">
@@ -57,7 +57,7 @@ const Paintings = () => {
                 </div>
 
                 {/* Mobile Grid */}
-                <div className="grid-view">
+                <div className="design-flex grid-view">
                     {works.map((work) => (
                         <div key={work.id} className="design-card">
                             <img
