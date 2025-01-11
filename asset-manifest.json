@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mei-shi/static/css/main.23cfa9a3.css",
-    "main.js": "/mei-shi/static/js/main.e97870ce.js",
+    "main.css": "/mei-shi/static/css/main.60f59153.css",
+    "main.js": "/mei-shi/static/js/main.52d71840.js",
     "static/js/119.5ee75a12.chunk.js": "/mei-shi/static/js/119.5ee75a12.chunk.js",
     "static/js/317.e39cec02.chunk.js": "/mei-shi/static/js/317.e39cec02.chunk.js",
     "static/media/logo.svg": "/mei-shi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/mei-shi/index.html",
-    "main.23cfa9a3.css.map": "/mei-shi/static/css/main.23cfa9a3.css.map",
-    "main.e97870ce.js.map": "/mei-shi/static/js/main.e97870ce.js.map",
+    "main.60f59153.css.map": "/mei-shi/static/css/main.60f59153.css.map",
+    "main.52d71840.js.map": "/mei-shi/static/js/main.52d71840.js.map",
     "119.5ee75a12.chunk.js.map": "/mei-shi/static/js/119.5ee75a12.chunk.js.map",
     "317.e39cec02.chunk.js.map": "/mei-shi/static/js/317.e39cec02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23cfa9a3.css",
-    "static/js/main.e97870ce.js"
+    "static/css/main.60f59153.css",
+    "static/js/main.52d71840.js"
   ]
 }
