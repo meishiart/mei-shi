@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Designworks from '../Designworks';
 import '../home.css';
 
 const BrandDesignWorks = () => {
@@ -72,7 +73,7 @@ const BrandDesignWorks = () => {
               ))}
             </div>
             <div className="link-block">
-              <Link className="designlink" to="/works">
+              <Link className="designlink" to="/Designworks">
                 View All Works
               </Link>
             </div>
@@ -83,7 +84,7 @@ const BrandDesignWorks = () => {
             <p>
               Have a project in mind? Reach out to supercharge your brand with our expert design services.
             </p>
-            <button>Start Today</button>
+            <a href="mailto:meishi2018@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}><button className="design-button">Start Today</button></a>
           </div>
         </div>
       </div>

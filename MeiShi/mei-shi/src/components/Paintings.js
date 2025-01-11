@@ -8,18 +8,15 @@ const Paintings = () => {
     const works = [
         {
             id: 1,
-            title: "Project One",
-            image: "https://placehold.co/450x450",
+            image: "/imgs/Li Ka-shing.jpg",
         },
         {
             id: 2,
-            title: "Project Two",
-            image: "https://placehold.co/450x450",
+            image: "/imgs/Elderly Ukranian.JPG",
         },
         {
             id: 3,
-            title: "Project Three",
-            image: "https://placehold.co/450x450",
+            image: "/imgs/Ge Ge.jpg",
         }
     ];
 
@@ -36,10 +33,11 @@ const Paintings = () => {
                 onReady={() => console.log('Carousel is ready')}
             >
                 {works.map((work) => (
-                    <div key={work.id} className="paintings-card">
+                    <div key={work.id} className="design-card">
                         <img
-                            src={work.image}
+                            src={process.env.PUBLIC_URL + work.image}
                             alt={work.title}
+                            className="paintings-squares"
                             style={{ margin: '0 10px' }}
                         />
                     </div>
@@ -47,7 +45,7 @@ const Paintings = () => {
             </ScrollCarousel>
 
             <div className = "link-block">
-                <Link className="designlink" to="/works">
+                <Link className="designlink" to="/Paintingworks">
                     View All Works
                 </Link>
             </div>

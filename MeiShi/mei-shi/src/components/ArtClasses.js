@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../home.css';
-
+import Classes from '../Classes';
 const ArtClasses = () => {
     const works = [
         {
@@ -34,7 +34,7 @@ const ArtClasses = () => {
                                     <img
                                         src={process.env.PUBLIC_URL + work.image}
                                         alt={work.title}
-                                        className="paintings-squares"
+                                        className="classes-squares"
                                     />
                                 </div>
                             ))}
@@ -46,7 +46,7 @@ const ArtClasses = () => {
                         <p>
                             Founded in 2018, MeiShi Art Center, located south of Portland, teaches art and digital design classes to people of all ages and all levels. Today, our innovative program reaches students across the United States and Canada.            </p>
 
-                        <button>Learn More</button>
+                        <Link to="/Classes" ><button className="design-button">Learn More</button></Link>
                     </div>
                 </div>
 

@@ -6,7 +6,9 @@ import Paintings from './components/Paintings';
 import ParticleBackground from './ParticleBackground';
 import './home.css';
 import ArtClasses from './components/ArtClasses';
-
+import Paintingworks from './Paintingworks';
+import Designworks from './Designworks';
+import Classes from './Classes';
 function Home() {
   return (
     <div className="App">
