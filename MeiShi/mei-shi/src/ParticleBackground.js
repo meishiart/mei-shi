@@ -158,7 +158,8 @@ class ParticleBackground extends Component {
     p.windowResized = () => {
       // Store the current background color
       // const bgColord = settings.background;
-      
+      p.background([0,0,0]);
+
       p.resizeCanvas(p.windowWidth, p.windowHeight);
       cols = p.floor(p.width / flowFieldScale);
       rows = p.floor(p.height / flowFieldScale);
@@ -168,8 +169,7 @@ class ParticleBackground extends Component {
       // if (Array.isArray(bgColor)) {
       //   p.background(bgColor[0], bgColor[1], bgColor[2]);
       // } else {
-      //   p.background(0); // fallback to black if background color is undefined
-      // }
+        // }
     };
 
   //   p.mouseMoved = () => {
