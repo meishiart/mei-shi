@@ -267,4 +267,27 @@
   aspect-ratio: 1 / 1;
 }
 
+/* Hide grid on desktop */
+.carousel-view {
+    display: none;
+}
+
+/* Hide carousel on mobile */
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .carousel-view {
+        display: block;
+    }
+    
+    .grid-view {
+        display: none;
+    }
+}
+
 

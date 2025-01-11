@@ -22,36 +22,60 @@ const Paintings = () => {
 
     return (
         // <section className="no-background">
-            <div className="branddesign-container ">
-             
+        <div className="branddesign-container ">
+
             <h2>Painting and Illustration</h2>
 
-            <ScrollCarousel
-                autoplay={true}
-                autoplaySpeed={4}
-                speed={7}
-                onReady={() => console.log('Carousel is ready')}
-            >
-                {works.map((work) => (
-                    <div key={work.id} className="design-card">
-                        <img
-                            src={process.env.PUBLIC_URL + work.image}
-                            alt={work.title}
-                            className="paintings-squares"
-                            style={{ margin: '0 10px' }}
-                        />
-                    </div>
-                ))}
-            </ScrollCarousel>
 
-            <div className = "link-block">
-                <Link className="designlink" to="/Paintingworks">
-                    View All Works
-                </Link>
+
+
+            <div className="branddesign-container">
+
+                {/* Desktop Carousel */}
+                <div className="carousel-view">
+                    <ScrollCarousel
+                        autoplay={true}
+                        autoplaySpeed={4}
+                        speed={7}
+                        onReady={() => console.log('Carousel is ready')}
+                    >
+                        {works.map((work) => (
+                            <div key={work.id} className="paintings-card">
+                                <img
+                                    src={process.env.PUBLIC_URL + work.image}
+                                    alt={work.title}
+                                    className="paintings-squares"
+                                />
+                            </div>
+                        ))}
+                    </ScrollCarousel>
+                    <div className="link-block">
+                        <Link className="designlink" to="/Paintingworks">
+                            View All Works
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Mobile Grid */}
+                <div className="grid-view">
+                    {works.map((work) => (
+                        <div key={work.id} className="design-card">
+                            <img
+                                src={process.env.PUBLIC_URL + work.image}
+                                alt={work.title}
+                                className="paintings-squares"
+                            />
+                        </div>
+                    ))}
+                    <div className="link-block">
+                        <Link className="designlink" to="/Paintingworks">
+                            View All Works
+                        </Link>
+                    </div>
+                </div>
             </div>
-   
-            </div>
-        // </section>
+        {/* </section> */}
+        </div>
     );
 };
 

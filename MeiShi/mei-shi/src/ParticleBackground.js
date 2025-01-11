@@ -158,13 +158,13 @@ class ParticleBackground extends Component {
     p.windowResized = () => {
       // Store the current background color
       // const bgColord = settings.background;
-      p.background([0,0,0]);
 
       p.resizeCanvas(p.windowWidth, p.windowHeight);
       cols = p.floor(p.width / flowFieldScale);
       rows = p.floor(p.height / flowFieldScale);
       this.flowField = new Array(cols * rows);
-      
+      p.background([0,0,0]);
+
       // // Use the stored background color
       // if (Array.isArray(bgColor)) {
       //   p.background(bgColor[0], bgColor[1], bgColor[2]);
