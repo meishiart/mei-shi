@@ -1,15 +1,25 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, Navigate } from 'react-router-dom';
 import About from './About';
-import Home from './Home';
+import Home from './mei-shi';
 import Paintingworks from './Paintingworks';
 import Designworks from './Designworks';
 import Classes from './Classes';
+import { useEffect } from 'react';
 
+import { useLocation } from 'react-router-dom';
 
 function App() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+
+    window.scrollTo(0, 0);
+
+  }, [location]);
 
   return (
 
@@ -17,7 +27,7 @@ function App() {
       <nav className="navbar">
         <h2 className="nav-brand">Mei Shi</h2>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/mei-shi">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><a href="mailto:meishi2018@gmail.com">Contact</a></li>
         </ul>
@@ -26,7 +36,8 @@ function App() {
 
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/mei-shi" />} />
+        <Route path="/mei-shi" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Paintingworks" element={<Paintingworks />} />
         <Route path="/Designworks" element={<Designworks />} />
@@ -54,13 +65,13 @@ function App() {
             </div>
           </div>
         </div>
-        
+
         <div className="footer-copyright">
           © 2024 Mei Shi. All rights reserved.
         </div>
-        
+
       </footer>
-      
+
     </div>
 
   );

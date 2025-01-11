@@ -218,15 +218,17 @@ html {
   .footer-content {
     flex-direction: column;
 
-    .hero-title {
-      font-size: 4rem;
-    }
+    
   }
   
   .footer-section {
     text-align: center;
     margin-bottom: 2rem;
     /* padding-left: 0; */
+  }
+
+  .hero-title {
+    font-size: 4rem;
   }
 }
 
