@@ -10,6 +10,8 @@
     margin-right: -50vw; */
 }
 
+
+
 .no-background {
     width: 100vw;
     padding: 4rem 0;
@@ -23,7 +25,10 @@
     margin: 2rem auto;
 }
 
-
+.blue-background, .footer {
+    background: #192D46;
+    width: 100vw;
+}
 .design-flex {
     display: flex;
     gap: 2rem;

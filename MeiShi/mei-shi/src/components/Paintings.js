@@ -21,7 +21,7 @@ const Paintings = () => {
     ];
 
     return (
-        // <section className="no-background">
+        <section className="blue-background">
         <div className="branddesign-container ">
 
             <h2>Painting and Illustration</h2>
@@ -74,8 +74,9 @@ const Paintings = () => {
                     </div>
                 </div>
             </div>
-        {/* </section> */}
+        
         </div>
+        </section>
     );
 };
 

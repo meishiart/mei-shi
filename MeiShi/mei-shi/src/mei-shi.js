@@ -13,13 +13,29 @@ function Home() {
   return (
     <div className="App">
       {/* <ParticleBackground /> */}
-      <img  src={process.env.PUBLIC_URL + "/imgs/Ge Ge.jpg"} alt="students painting in studio" />
 
-      <div className="hero">
+      <div className="hero" style={{
+        backgroundImage: 'url("/mei-shi/imgs/himalaya.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        color: 'white',  // Making text white to stand out against the background
+      }}>
         <h1 className="hero-title">
           <span className="animate-in">Mei Shi</span>
         </h1>
-        <img  src={process.env.PUBLIC_URL + "/imgs/himalaya.jpg"} alt="students painting in studio" />
+        {console.log("Image path:", process.env.PUBLIC_URL + "/imgs/himalaya.jpg")}
+        {/* <img 
+          src="/mei-shi/imgs/himalaya.jpg"
+          alt="Himalaya"
+          style={{ border: '2px solid blue', maxWidth: '100%', display: 'block' }} 
+        /> */}
 
         <div className="hero-subtext">
           <span className="animate-in delay-1">Brand Designer.</span>
