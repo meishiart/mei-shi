@@ -12,11 +12,15 @@ import Classes from './Classes';
 function Home() {
   return (
     <div className="App">
-      <ParticleBackground />
+      {/* <ParticleBackground /> */}
+      <img  src={process.env.PUBLIC_URL + "/imgs/Ge Ge.jpg"} alt="students painting in studio" />
+
       <div className="hero">
         <h1 className="hero-title">
           <span className="animate-in">Mei Shi</span>
         </h1>
+        <img  src={process.env.PUBLIC_URL + "/imgs/himalaya.jpg"} alt="students painting in studio" />
+
         <div className="hero-subtext">
           <span className="animate-in delay-1">Brand Designer.</span>
           <span className="animate-in delay-2">Artist.</span>
